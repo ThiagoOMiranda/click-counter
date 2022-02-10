@@ -10,13 +10,17 @@
     font-size: 16px;
 }
 
+body {
+    background: lightgray;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: lightgray;
-    overflow: hidden;
+    height: 100vh;
+    /* min-height: 100vh; */
+    /* overflow: hidden; */
 }
 
 .card {
@@ -205,8 +209,6 @@
     flex-direction: column;
     width: 21.875rem;
     height: 31.25rem;
-    /* width: 74.47%;
-    height: 86.506%; */
     left: 0.9%;
     top: 4.2%;
     color: #1bff80;
@@ -504,13 +506,10 @@
     position: relative;
     width: 17.5rem;
     height: 17.5rem;
-    /* width: 65.421%;
-    height: 48.443%; */
     top: 12.9%;
 }
 
 .content .box {
-    /* width: 28.2%; */
     width: 5rem;
     position: relative;
     display: flex;
@@ -523,21 +522,18 @@
 
 .content .box:nth-child(2) {
     margin: 0 1rem 0 1rem;
-    /* margin: 0 5.5% 0 5.5%; */
 }
 
 .content .box span {
     font-family: 'Poppins', sans-serif;
     text-align:center;
     width: 5.5rem;
-    /* width: 107.79%; */
     position: absolute;
     color: rgb(54, 54, 54);
     font-size: 7rem!important;
     white-space: nowrap;
     font-weight: 800;
     transform: rotateX(calc(var(--i) * 36deg)) translateZ(9.375rem);
-    /* padding: 0 10px; */
     background-color: rgb(230, 230, 230);
     line-height: 6.5rem;
     transform-style: preserve-3d;
@@ -560,8 +556,6 @@
     align-items: center;
     width: 20.5rem;
     height: 20.5rem;
-    /* width: 76.636%;
-    height: 56.748%; */
     background: linear-gradient(0deg,black 0%, transparent 50%, black 100%);
     border-radius: 1.563rem;
     border: 0.25rem double white;
@@ -573,9 +567,7 @@
 .mask .marker {
     width: 95%;
     height: 6.7rem;
-    /* height: 34.375%; */
     border-radius: 1rem;
-    /* border-radius: 6.94% / 21.27%; */
     border: 8px groove red;
 }
 
@@ -1004,8 +996,7 @@ input:checked + .slider:before {
         font-size: 8px!important;
     }
     .container {
-        min-height: 150vh!important;
-        height: 150vh!important;
+        height: 200%!important;
     }
     .container {
         padding-top: 1rem;
