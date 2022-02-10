@@ -61,11 +61,19 @@
 
 <br>
 
-<p align="center"><img width="700" src="./assets/src/resultado1.jpg"/>Figura 02: Side menu.</p>
+<p align="center"><img width="700" src="./assets/src/resultado1.jpg"/>
+
+<p align="center">Figura 02: Side menu.</p>
+
+</p>
 
 <br>
 
-<p align="center"><img width="700" src="./assets/src/resultado2.jpg"/>Figuras 03 e 04: Temas claro e escuro.</p>              
+<p align="center"><img width="700" src="./assets/src/resultado2.jpg"/>
+
+<p align="center">Figuras 03 e 04: Temas claro e escuro.</p>
+
+</p>              
 
 <br>
 
