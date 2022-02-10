@@ -12,13 +12,17 @@
 
 body {
     background: lightgray;
+    height: 100vh;
+    width: 100%;
+
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     /* min-height: 100vh; */
     /* overflow: hidden; */
 }
@@ -1037,13 +1041,19 @@ input:checked + .slider:before {
         animation: bottomShadow-reverse ease 1s .1s both;
     }
     .wrapper:after {
+        box-shadow: none!important;
         opacity: 0!important;
+        background: transparent!important;
     }
     .drop-shadow:after {
+        box-shadow: none!important;
         opacity: 0!important;
+        background: transparent!important;
     }
     .drop-shadow-reverse:after {
+        box-shadow: none!important;
         opacity: 0!important;
+        background: transparent!important;
     }
     #pointer {
         top: unset;
