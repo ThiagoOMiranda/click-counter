@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.svg">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Click Counter</title>
+</head>
+<body class="container">
+    <div class="card" id="card">
+        <button id="pointer"><i class="fas fa-info-circle"><div class="pointer ripple"></div></i></button>
+        <div class="tutorial" id="info">
+            <div class="info-text crt" id="page1">
+                <h5>DESAFIO PROPOSTO NO BOOTCAMP DA DIO</h5>
+                <h6>OBJETIVOS:</h6>
+                <p>&#8226;&emsp;Criar um contador de incrementos utilizando o método <i><b>AddEventListener</b></i> nos botões;
+                    <br><br>&#8226;&emsp;Implementar regras de mudança de atributos manipulando o DOM (Document Object Model) com os métodos <i><b>document.GetElement</b></i>;
+                </p>
+                <h6>APRIMORAMENTOS:</h6>
+                <p>&#8226;&emsp;Dial analógico de 03 dígitos;
+                    <br>&#8226;&emsp;Botão de troca de temas;
+                    <br>&#8226;&emsp;Botão de Reset do contador;
+                    <br>&#8226;&emsp;Chave seletora de <i><b>modos:</b></i>
+                    <br>&emsp;&emsp;<i><b>Mode 01: </b></i>O display muda para vermelho e o dial desabilita quando os números são negativos;
+                    <br>&emsp;&emsp;<i><b>Mode 02: </b></i>O contador desabilita os botões de <b>-</b> ou <b>+</b> quando o limite é atingido.
+                </p>
+            </div>
+            <div class="info-text-back crt none" id="page2">
+                <h6>INSTRUÇÕES:</h6>
+                <div class="diagram">
+                    <p>Seletor de Temas</p>
+                    <p>Dial Analógico</p>
+                    <p>Display</p>
+                    <p>Modos</p>
+                    <p>Incremento</p>
+                    <p>Decremento</p>
+                    <p>Reset</p>
+                    <p>Marcador</p>
+                </div>
+            </div>
+            <div class="about crt none" id="page3">
+                <h6>SOBRE:</h6>
+                <p><i><b>Criado e desenvolvido por:<br></b></i> THIAGO DE OLIVEIRA MIRANDA
+                <br><br><i><b>Github:</b></i> <a href="https://github.com/thiagoomiranda">thiagoomiranda</a>
+                <br><br><i><b>LinkedIn:</b></i> <a href="https://www.linkedin.com/in/thiago-de-oliveira-miranda-5393181a7/">thiagoomiranda</a>
+                </p>
+            </div>
+            <button id="next"><i class="fas fa-arrow-alt-circle-right"><div class="wave"></div></i></button>
+        </div>
+    </div>
+    <div class="wrapper" id ="background">
+        <button class="theme-button" id="theme">
+        </button>
+        <div class="mask">
+            <div class="marker"></div>
+        </div>
+        <div class="door">
+            <div class="door-top"></div>
+            <div class="door-bottom"></div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <span style="--i:1;">9</span>
+                <span style="--i:2;">8</span>
+                <span style="--i:3;">7</span>
+                <span style="--i:4;">6</span>
+                <span style="--i:5;">5</span>
+                <span style="--i:6;">4</span>
+                <span style="--i:7;">3</span>
+                <span style="--i:8;">2</span>
+                <span style="--i:9;">1</span>
+                <span style="--i:10;">0</span>
+            </div>
+            <div class="box">
+                <span style="--i:1;">9</span>
+                <span style="--i:2;">8</span>
+                <span style="--i:3;">7</span>
+                <span style="--i:4;">6</span>
+                <span style="--i:5;">5</span>
+                <span style="--i:6;">4</span>
+                <span style="--i:7;">3</span>
+                <span style="--i:8;">2</span>
+                <span style="--i:9;">1</span>
+                <span style="--i:10;">0</span>
+            </div>
+            <div class="box">
+                <span style="--i:1;">9</span>
+                <span style="--i:2;">8</span>
+                <span style="--i:3;">7</span>
+                <span style="--i:4;">6</span>
+                <span style="--i:5;">5</span>
+                <span style="--i:6;">4</span>
+                <span style="--i:7;">3</span>
+                <span style="--i:8;">2</span>
+                <span style="--i:9;">1</span>
+                <span style="--i:10;">0</span>
+            </div>    
+        </div>
+        <div class="painel-wrapper">
+            <p class="slider-label">mode</p>
+            <div class="button-wrapper">
+                <button id="dec" class="main-buttons"><p>-</p></button>
+                <div class="painel-center">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span id="currentNumber">0</span>
+                </div>
+                <button id="inc" class="main-buttons"><p>+</p></button>
+            </div>
+            <button id="reset" class="reset-button"><p>RESET</p></button>
+        </div>
+        <!-- <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg> -->
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
