@@ -996,7 +996,7 @@ input:checked + .slider:before {
         font-size: 8px!important;
     }
     .container {
-        height: 200%!important;
+        height: 250%!important;
     }
     .container {
         padding-top: 1rem;
